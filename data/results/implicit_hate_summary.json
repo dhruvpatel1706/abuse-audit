@@ -1,0 +1,57 @@
+{
+  "class_distribution": {
+    "not_hate": 13291,
+    "implicit_hate": 7100,
+    "explicit_hate": 1089
+  },
+  "n_after_norm": 21480,
+  "source": "tasksource/implicit-hate-stg1 (HF mirror of SALT-NLP/implicit-hate stg1)",
+  "tasks": [
+    {
+      "task": "implicit_vs_nothate",
+      "n_total": 20391,
+      "n_pos": 7100,
+      "pos_rate": 0.3482,
+      "n_test": 4079,
+      "f1_majority": 0.395,
+      "f1_full": 0.712,
+      "f1_full_lo": 0.698,
+      "f1_full_hi": 0.727,
+      "f1_top50": 0.652,
+      "retained_pct": 91.5,
+      "retained_lo": 88.7,
+      "retained_hi": 94.2,
+      "top15_tokens": "illegals them jews illegal deport jew whitegenocide diversity black genocide blacks send whites muslims civilization",
+      "f1_top10": 0.583,
+      "ret10": 81.8,
+      "f1_top25": 0.641,
+      "ret25": 90.1,
+      "ret50": 91.5,
+      "f1_top100": 0.663,
+      "ret100": 93.1
+    },
+    {
+      "task": "anyhate_vs_nothate",
+      "n_total": 21480,
+      "n_pos": 8189,
+      "pos_rate": 0.3812,
+      "n_test": 4296,
+      "f1_majority": 0.382,
+      "f1_full": 0.72,
+      "f1_full_lo": 0.706,
+      "f1_full_hi": 0.734,
+      "f1_top50": 0.674,
+      "retained_pct": 93.6,
+      "retained_lo": 90.9,
+      "retained_hi": 96.4,
+      "top15_tokens": "illegals jews jew them deport illegal kill whitegenocide muslims trash blacks genocide faggots diversity islam",
+      "f1_top10": 0.576,
+      "ret10": 80.0,
+      "f1_top25": 0.65,
+      "ret25": 90.2,
+      "ret50": 93.7,
+      "f1_top100": 0.684,
+      "ret100": 95.1
+    }
+  ]
+}

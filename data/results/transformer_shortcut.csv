@@ -1,0 +1,4 @@
+dataset,n_train,n_test,n_labels,n_top_tokens,f1_full_mean,f1_shortcut_mean,retained_pct_mean,retained_pct_ci95_halfwidth
+davidson2017,6000,4957,2,50,0.9294,0.8585,92.4,6.7
+hatexplain,6000,4030,2,50,0.7594,0.6863,90.4,2.6
+tweeteval_hate,6000,2593,2,50,0.7614,0.6937,91.1,18.3

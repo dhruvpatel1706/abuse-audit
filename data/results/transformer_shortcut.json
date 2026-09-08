@@ -1,0 +1,92 @@
+{
+  "description": "distilBERT macro-F1 on full text vs shortcut-only text (every word outside the top-50 chi2 tokens deleted). Same split/labels/tokens as the linear shortcut result (shortcut.csv); only the model changes.",
+  "model": "distilbert-base-uncased",
+  "split_seed": 42,
+  "train_seeds": [
+    42,
+    1
+  ],
+  "train_cap": 6000,
+  "max_len": 96,
+  "epochs": 3,
+  "device": "cpu",
+  "by_dataset": [
+    {
+      "dataset": "davidson2017",
+      "n_train": 6000,
+      "n_test": 4957,
+      "n_labels": 2,
+      "n_top_tokens": 50,
+      "f1_full_mean": 0.9294,
+      "f1_shortcut_mean": 0.8585,
+      "retained_pct_mean": 92.4,
+      "retained_pct_ci95_halfwidth": 6.7
+    },
+    {
+      "dataset": "hatexplain",
+      "n_train": 6000,
+      "n_test": 4030,
+      "n_labels": 2,
+      "n_top_tokens": 50,
+      "f1_full_mean": 0.7594,
+      "f1_shortcut_mean": 0.6863,
+      "retained_pct_mean": 90.4,
+      "retained_pct_ci95_halfwidth": 2.6
+    },
+    {
+      "dataset": "tweeteval_hate",
+      "n_train": 6000,
+      "n_test": 2593,
+      "n_labels": 2,
+      "n_top_tokens": 50,
+      "f1_full_mean": 0.7614,
+      "f1_shortcut_mean": 0.6937,
+      "retained_pct_mean": 91.1,
+      "retained_pct_ci95_halfwidth": 18.3
+    }
+  ],
+  "per_seed": [
+    {
+      "dataset": "davidson2017",
+      "seed": 42,
+      "f1_full": 0.9276,
+      "f1_shortcut": 0.8519,
+      "retained_pct": 91.8
+    },
+    {
+      "dataset": "davidson2017",
+      "seed": 1,
+      "f1_full": 0.9312,
+      "f1_shortcut": 0.865,
+      "retained_pct": 92.9
+    },
+    {
+      "dataset": "hatexplain",
+      "seed": 42,
+      "f1_full": 0.7582,
+      "f1_shortcut": 0.6837,
+      "retained_pct": 90.2
+    },
+    {
+      "dataset": "hatexplain",
+      "seed": 1,
+      "f1_full": 0.7605,
+      "f1_shortcut": 0.6889,
+      "retained_pct": 90.6
+    },
+    {
+      "dataset": "tweeteval_hate",
+      "seed": 42,
+      "f1_full": 0.7609,
+      "f1_shortcut": 0.6823,
+      "retained_pct": 89.7
+    },
+    {
+      "dataset": "tweeteval_hate",
+      "seed": 1,
+      "f1_full": 0.7619,
+      "f1_shortcut": 0.7052,
+      "retained_pct": 92.6
+    }
+  ]
+}

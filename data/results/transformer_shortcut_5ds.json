@@ -1,0 +1,142 @@
+{
+  "description": "distilBERT macro-F1 on full text vs shortcut-only text (every word outside the top-50 chi2 tokens deleted). Same split/labels/tokens as the linear shortcut result (shortcut.csv); only the model changes.",
+  "model": "distilbert-base-uncased",
+  "split_seed": 42,
+  "train_seeds": [
+    42,
+    1
+  ],
+  "train_cap": 6000,
+  "max_len": 96,
+  "epochs": 3,
+  "device": "cpu",
+  "by_dataset": [
+    {
+      "dataset": "davidson2017",
+      "n_train": 6000,
+      "n_test": 4957,
+      "n_labels": 2,
+      "n_top_tokens": 50,
+      "f1_full_mean": 0.9315,
+      "f1_shortcut_mean": 0.8572,
+      "retained_pct_mean": 92.0,
+      "retained_pct_ci95_halfwidth": 9.1
+    },
+    {
+      "dataset": "hatexplain",
+      "n_train": 6000,
+      "n_test": 4030,
+      "n_labels": 2,
+      "n_top_tokens": 50,
+      "f1_full_mean": 0.7529,
+      "f1_shortcut_mean": 0.6894,
+      "retained_pct_mean": 91.6,
+      "retained_pct_ci95_halfwidth": 14.2
+    },
+    {
+      "dataset": "tweeteval_hate",
+      "n_train": 6000,
+      "n_test": 2593,
+      "n_labels": 2,
+      "n_top_tokens": 50,
+      "f1_full_mean": 0.7591,
+      "f1_shortcut_mean": 0.6902,
+      "retained_pct_mean": 90.9,
+      "retained_pct_ci95_halfwidth": 21.5
+    },
+    {
+      "dataset": "dynahate2021",
+      "n_train": 6000,
+      "n_test": 8229,
+      "n_labels": 2,
+      "n_top_tokens": 50,
+      "f1_full_mean": 0.745,
+      "f1_shortcut_mean": 0.6067,
+      "retained_pct_mean": 81.4,
+      "retained_pct_ci95_halfwidth": 9.1
+    },
+    {
+      "dataset": "stormfront",
+      "n_train": 6000,
+      "n_test": 2133,
+      "n_labels": 2,
+      "n_top_tokens": 50,
+      "f1_full_mean": 0.755,
+      "f1_shortcut_mean": 0.6704,
+      "retained_pct_mean": 88.8,
+      "retained_pct_ci95_halfwidth": 6.5
+    }
+  ],
+  "per_seed": [
+    {
+      "dataset": "davidson2017",
+      "seed": 42,
+      "f1_full": 0.9307,
+      "f1_shortcut": 0.8498,
+      "retained_pct": 91.3
+    },
+    {
+      "dataset": "davidson2017",
+      "seed": 1,
+      "f1_full": 0.9323,
+      "f1_shortcut": 0.8646,
+      "retained_pct": 92.7
+    },
+    {
+      "dataset": "hatexplain",
+      "seed": 42,
+      "f1_full": 0.758,
+      "f1_shortcut": 0.6857,
+      "retained_pct": 90.5
+    },
+    {
+      "dataset": "hatexplain",
+      "seed": 1,
+      "f1_full": 0.7477,
+      "f1_shortcut": 0.693,
+      "retained_pct": 92.7
+    },
+    {
+      "dataset": "tweeteval_hate",
+      "seed": 42,
+      "f1_full": 0.7581,
+      "f1_shortcut": 0.6765,
+      "retained_pct": 89.2
+    },
+    {
+      "dataset": "tweeteval_hate",
+      "seed": 1,
+      "f1_full": 0.7601,
+      "f1_shortcut": 0.7039,
+      "retained_pct": 92.6
+    },
+    {
+      "dataset": "dynahate2021",
+      "seed": 42,
+      "f1_full": 0.7452,
+      "f1_shortcut": 0.6015,
+      "retained_pct": 80.7
+    },
+    {
+      "dataset": "dynahate2021",
+      "seed": 1,
+      "f1_full": 0.7448,
+      "f1_shortcut": 0.6119,
+      "retained_pct": 82.1
+    },
+    {
+      "dataset": "stormfront",
+      "seed": 42,
+      "f1_full": 0.7704,
+      "f1_shortcut": 0.6802,
+      "retained_pct": 88.3
+    },
+    {
+      "dataset": "stormfront",
+      "seed": 1,
+      "f1_full": 0.7396,
+      "f1_shortcut": 0.6605,
+      "retained_pct": 89.3
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Python 3.12 (the audit .venv is 3.12.12). The six core packages below run the
+# whole audit and the abuse-audit tool on a CPU. torch and transformers are
+# OPTIONAL extras, needed only for the distilBERT leakage check in Appendix D
+# (code/transformer_check.py); the core audit does not import them.
+datasketch==1.10.0
+matplotlib==3.10.9
+numpy==2.4.6
+pandas==3.0.3
+scikit-learn==1.9.0
+scipy==1.17.1
+# --- optional, transformer leakage check only ---
+torch==2.12.0
+transformers==5.12.1

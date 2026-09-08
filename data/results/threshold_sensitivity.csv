@@ -1,0 +1,5 @@
+threshold,all_pairs,cross_dataset_pairs,within_dataset_pairs,cross_label_conflicts
+0.5,43843,272,43571,132
+0.7,15805,26,15779,11
+0.8,5218,17,5201,9
+0.9,1097,12,1085,5

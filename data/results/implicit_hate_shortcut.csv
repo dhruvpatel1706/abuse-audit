@@ -1,0 +1,3 @@
+task,n_total,n_pos,pos_rate,n_test,f1_majority,f1_full,f1_full_lo,f1_full_hi,f1_top50,retained_pct,retained_lo,retained_hi,top15_tokens,f1_top10,ret10,f1_top25,ret25,ret50,f1_top100,ret100
+implicit_vs_nothate,20391,7100,0.3482,4079,0.395,0.712,0.698,0.727,0.652,91.5,88.7,94.2,illegals them jews illegal deport jew whitegenocide diversity black genocide blacks send whites muslims civilization,0.583,81.8,0.641,90.1,91.5,0.663,93.1
+anyhate_vs_nothate,21480,8189,0.3812,4296,0.382,0.72,0.706,0.734,0.674,93.6,90.9,96.4,illegals jews jew them deport illegal kill whitegenocide muslims trash blacks genocide faggots diversity islam,0.576,80.0,0.65,90.2,93.7,0.684,95.1

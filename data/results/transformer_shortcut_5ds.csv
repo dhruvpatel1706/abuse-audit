@@ -1,0 +1,6 @@
+dataset,n_train,n_test,n_labels,n_top_tokens,f1_full_mean,f1_shortcut_mean,retained_pct_mean,retained_pct_ci95_halfwidth
+davidson2017,6000,4957,2,50,0.9315,0.8572,92.0,9.1
+hatexplain,6000,4030,2,50,0.7529,0.6894,91.6,14.2
+tweeteval_hate,6000,2593,2,50,0.7591,0.6902,90.9,21.5
+dynahate2021,6000,8229,2,50,0.745,0.6067,81.4,9.1
+stormfront,6000,2133,2,50,0.755,0.6704,88.8,6.5

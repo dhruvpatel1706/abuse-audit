@@ -1,0 +1,110 @@
+{
+  "examples": [
+    {
+      "canonical_key": "karma is a b***h",
+      "max_jaccard": 1.0,
+      "n_links": 4,
+      "negative_in": [
+        "DynaHate",
+        "HateXplain"
+      ],
+      "positive_in": [
+        "Davidson"
+      ],
+      "reading": "Generic profanity with no target. Davidson's broad offensive class marks it positive; the hate-specific corpora do not.",
+      "text": "karma is a b***h",
+      "variants": [
+        "karma is a b***h",
+        "karma is a b***h.",
+        "karma is a b***h..."
+      ]
+    },
+    {
+      "canonical_key": "i f*****g hate myself",
+      "max_jaccard": 1.0,
+      "n_links": 1,
+      "negative_in": [
+        "DynaHate"
+      ],
+      "positive_in": [
+        "HateXplain"
+      ],
+      "reading": "Self-directed, no target group. Not an offensive-versus-hate split at all: one corpus reads the hate verb as the signal.",
+      "text": "i f*****g hate myself",
+      "variants": [
+        "i f*****g hate myself"
+      ]
+    },
+    {
+      "canonical_key": "user you p***y",
+      "max_jaccard": 0.9167,
+      "n_links": 1,
+      "negative_in": [
+        "TweetEval"
+      ],
+      "positive_in": [
+        "Davidson"
+      ],
+      "reading": "Gendered insult aimed at an individual, not a protected group.",
+      "text": "@user you p***y",
+      "variants": [
+        "@user you p***y",
+        "@user you p***y."
+      ]
+    },
+    {
+      "canonical_key": "u a stupid h*",
+      "max_jaccard": 0.9,
+      "n_links": 1,
+      "negative_in": [
+        "TweetEval"
+      ],
+      "positive_in": [
+        "Davidson"
+      ],
+      "reading": "Gendered insult aimed at an individual. Same split as the line above.",
+      "text": "u a stupid h*",
+      "variants": [
+        "u a stupid h*",
+        "u a stupid h*e"
+      ]
+    },
+    {
+      "canonical_key": "hell yea b***h dis go hard as hell flocka i will suck big d**k team s**t all day and week month year and century i love big naps",
+      "max_jaccard": 0.8832,
+      "n_links": 1,
+      "negative_in": [
+        "TweetEval"
+      ],
+      "positive_in": [
+        "HateXplain"
+      ],
+      "reading": "In-group AAVE-inflected banter. Reclaimed usage that the two corpora score in opposite directions.",
+      "text": "hell yea b***h dis go hard as hell flocka i will suck big d**k team s**t all day and week month year and century i love big naps",
+      "variants": [
+        "hell yea b***h dis go hard as hell flocka i will suck big d**k team s**t all day and week month year and century i love big naps",
+        "hell yea b***h dis go hard as hell flocka i will suck big d**k team s**t all day and week month year and century i love big naps d i c k q u a d"
+      ]
+    },
+    {
+      "canonical_key": "she s a h*e she s ugly she s a b***h she s this she s that but you dated her please take a seat",
+      "max_jaccard": 0.8404,
+      "n_links": 1,
+      "negative_in": [
+        "TweetEval"
+      ],
+      "positive_in": [
+        "Davidson"
+      ],
+      "reading": "Quoted misogynistic speech that the post itself is criticising.",
+      "text": "she's a h*e, she's ugly, she's a b***h, she's this, she's that .. but you dated her ? please, take a seat.",
+      "variants": [
+        "@user: she's a h*e, she's ugly, she's a b***h, she's this, she's that .. but you dated her? please, take a seat.",
+        "she's a h*e, she's ugly, she's a b***h, she's this, she's that .. but you dated her ? please, take a seat."
+      ]
+    }
+  ],
+  "n_distinct_texts": 6,
+  "n_links": 9,
+  "threshold": 0.8
+}

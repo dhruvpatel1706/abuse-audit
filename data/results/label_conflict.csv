@@ -1,0 +1,10 @@
+nid_a,nid_b,jaccard,dataset_a,dataset_b,label_a,label_b,cross_dataset,label_conflict,rows_a,rows_b
+6081,100776,0.9167,davidson2017,tweeteval_hate,1,0,True,True,1,1
+10788,106170,0.8404,davidson2017,tweeteval_hate,1,0,True,True,1,1
+18013,45434,0.9231,davidson2017,dynahate2021,1,0,True,True,1,1
+18013,77579,1.0,davidson2017,hatexplain,1,0,True,True,1,2
+18017,45434,0.8667,davidson2017,dynahate2021,1,0,True,True,1,1
+18017,77579,0.8,davidson2017,hatexplain,1,0,True,True,1,2
+22148,107489,0.9,davidson2017,tweeteval_hate,1,0,True,True,1,1
+37238,75273,1.0,dynahate2021,hatexplain,0,1,True,True,1,1
+74279,102936,0.8832,hatexplain,tweeteval_hate,1,0,True,True,1,1

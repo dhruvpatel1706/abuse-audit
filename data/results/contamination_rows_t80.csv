@@ -1,0 +1,6 @@
+dataset,total_rows,contaminated_rows,contaminated_pct
+davidson2017,24783,10,0.04
+dynahate2021,41144,4,0.01
+hatexplain,20148,10,0.05
+stormfront,10661,0,0.0
+tweeteval_hate,12962,5,0.04

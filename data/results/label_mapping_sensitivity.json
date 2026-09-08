@@ -1,0 +1,122 @@
+{
+  "_provenance": {
+    "baseline_reproduced": true,
+    "bootstrap_resamples": 10000,
+    "graph_source": "data/results/near_dup_pairs.csv (labels ignored, recomputed)",
+    "script": "code/label_mapping_sensitivity.py",
+    "seed": 20260910
+  },
+  "mappings": {
+    "baseline": {
+      "n_positive_nodes": 61305,
+      "thresholds": {
+        "0.5": {
+          "all": {
+            "ci_hi": 59.4,
+            "ci_lo": 48.0,
+            "n_conflicted": 151,
+            "n_nodes": 281,
+            "rate_pct": 53.7
+          },
+          "clean": {
+            "ci_hi": 55.7,
+            "ci_lo": 42.0,
+            "n_conflicted": 103,
+            "n_nodes": 212,
+            "rate_pct": 48.6
+          }
+        },
+        "0.8": {
+          "all": {
+            "ci_hi": 70.4,
+            "ci_lo": 33.3,
+            "n_conflicted": 14,
+            "n_nodes": 27,
+            "rate_pct": 51.9
+          },
+          "clean": {
+            "ci_hi": 77.8,
+            "ci_lo": 33.3,
+            "n_conflicted": 10,
+            "n_nodes": 18,
+            "rate_pct": 55.6
+          }
+        }
+      }
+    },
+    "hate_only_both": {
+      "n_positive_nodes": 35900,
+      "thresholds": {
+        "0.5": {
+          "all": {
+            "ci_hi": 55.5,
+            "ci_lo": 44.1,
+            "n_conflicted": 140,
+            "n_nodes": 281,
+            "rate_pct": 49.8
+          },
+          "clean": {
+            "ci_hi": 53.3,
+            "ci_lo": 40.1,
+            "n_conflicted": 99,
+            "n_nodes": 212,
+            "rate_pct": 46.7
+          }
+        },
+        "0.8": {
+          "all": {
+            "ci_hi": 29.6,
+            "ci_lo": 3.7,
+            "n_conflicted": 4,
+            "n_nodes": 27,
+            "rate_pct": 14.8
+          },
+          "clean": {
+            "ci_hi": 44.4,
+            "ci_lo": 5.6,
+            "n_conflicted": 4,
+            "n_nodes": 18,
+            "rate_pct": 22.2
+          }
+        }
+      }
+    },
+    "hate_only_davidson": {
+      "n_positive_nodes": 42286,
+      "thresholds": {
+        "0.5": {
+          "all": {
+            "ci_hi": 64.8,
+            "ci_lo": 53.4,
+            "n_conflicted": 166,
+            "n_nodes": 281,
+            "rate_pct": 59.1
+          },
+          "clean": {
+            "ci_hi": 62.3,
+            "ci_lo": 49.1,
+            "n_conflicted": 118,
+            "n_nodes": 212,
+            "rate_pct": 55.7
+          }
+        },
+        "0.8": {
+          "all": {
+            "ci_hi": 59.3,
+            "ci_lo": 22.2,
+            "n_conflicted": 11,
+            "n_nodes": 27,
+            "rate_pct": 40.7
+          },
+          "clean": {
+            "ci_hi": 66.7,
+            "ci_lo": 22.2,
+            "n_conflicted": 8,
+            "n_nodes": 18,
+            "rate_pct": 44.4
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+dataset,split,n_test,leaked_pct,f1_full,f1_dedup,f1_inflation
+davidson2017,random(3 seeds),4957,2.35,0.8969,0.8957,0.0012
+dynahate2021,official,4120,8.69,0.5745,0.5857,-0.0113
+hatexplain,random(3 seeds),4030,0.39,0.7332,0.7331,0.0001
+tweeteval_hate,official,2970,9.8,0.4008,0.3998,0.001
+stormfront,random(3 seeds),2133,2.19,0.6841,0.6819,0.0022
