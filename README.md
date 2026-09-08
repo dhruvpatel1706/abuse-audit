@@ -48,6 +48,7 @@ This runs, in order:
 - `code/analysis.py`          -> leakage, shortcut, transfer
 - `code/transfer_fix.py`      -> transfer matrix with a fair held-out diagonal
 - `code/make_figures.py`      -> bootstrap CIs + figures in `paper/figures/`
+- `code/render_figures.py`    -> redraw `fig_shortcut.png` and `fig_transfer.png` from the frozen CSVs, no retraining
 - `code/check_paper_numbers.py` -> build guard: diffs every number in `paper/main.tex` against the result CSVs (fails loudly on any mismatch)
 
 Results land in `data/results/`; figures in `paper/figures/`.
